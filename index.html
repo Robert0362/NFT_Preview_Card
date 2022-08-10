@@ -30,7 +30,9 @@
         border-radius: 1rem;
         justify-content: center;
         padding:1rem 0;
-        width:40%;
+        width:30%;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
       }
     .innerCard
       {
@@ -49,9 +51,47 @@
       {
         color:white;
       }
-
-
-
+    .desc
+      {
+        color:hsl(215, 34%, 41%);
+        font-size: 18px;
+      }
+    .price
+      {
+        color:hsl(178, 100%, 50%);
+      }
+    .value
+      {
+        display: inline-block;
+      }
+    .time
+      {
+        display: inline-block;
+      }
+    hr
+      {
+        color:hsl(215, 32%, 27%);
+      }
+    .days
+      {
+        color:hsl(215, 34%, 41%);
+      }  
+    .creator
+      {
+        text-align: left;
+        color:hsl(215, 34%, 41%);
+      }  
+    .profile
+      {
+        width: 10%;
+        border-color: white;
+        border-radius: 50%;
+        border-style: solid;
+      }
+    .name
+      {
+        color: white;
+      }
     .attribution 
       { 
         font-size: 11px; text-align: center; 
@@ -77,11 +117,18 @@
           <p class="desc">
             Our Equilibrium collection promotes balance and calm.
           </p>
-          0.041 ETH
-          3 days left
+          <div class="price">
+            <div class='value'>
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg> 0.041 ETH 
+            </div>
+            <div class="time">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg><span class="days">3 days left</span>
+            </div>
+          </div>
+          <hr />
         </div>
         <div class="creator">
-          Creation of Jules Wyvern
+          <img src="images\image-avatar.png" alt="Creater Pic" class="profile"> Creation of <span class="name">Jules Wyvern</span>
         </div>
       </div>  
     </div>
