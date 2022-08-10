@@ -20,7 +20,8 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        width:100vw;
+        min-height: 100vh;
+        min-width: 100vw;
       }
     .outerCard
       {
@@ -43,6 +44,10 @@
         border-radius: 1rem;
         width: 100%;
       } 
+    .image:hover
+      {
+        color:hsl(178, 100%, 50%)
+      }
     .nftInfo
       {
         text-align: left;
@@ -50,6 +55,10 @@
     .title
       {
         color:white;
+      }
+    .title:hover
+      {
+        color:hsl(178, 100%, 50%)
       }
     .desc
       {
@@ -59,6 +68,10 @@
     .price
       {
         color:hsl(178, 100%, 50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: .25rem;
       }
     .value
       {
@@ -67,10 +80,11 @@
     .time
       {
         display: inline-block;
+        
       }
     hr
       {
-        color:hsl(215, 32%, 27%);
+        border: 1px solid hsl(215, 32%, 27%);
       }
     .days
       {
@@ -80,10 +94,21 @@
       {
         text-align: left;
         color:hsl(215, 34%, 41%);
+        display: flex;
+        flex-direction: row;
+      } 
+    .pic
+      {
+        padding-top: .25rem;
+      }   
+    .maker
+      {
+        justify-content: center;
+        padding-top: 1rem;
       }  
     .profile
       {
-        width: 10%;
+        width: 35%;
         border-color: white;
         border-radius: 50%;
         border-style: solid;
@@ -91,6 +116,10 @@
     .name
       {
         color: white;
+      }
+    .name:hover
+      {
+        color:hsl(178, 100%, 50%)
       }
     .attribution 
       { 
@@ -101,6 +130,15 @@
       {  
         color: hsl(228, 45%, 44%); 
       }
+    @media screen and (max-width: 575px) 
+    {
+      .outerCard 
+      {
+        width:80%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;    
+      }
+    }
   </style>
 </head>
 <body>
@@ -128,7 +166,9 @@
           <hr />
         </div>
         <div class="creator">
-          <img src="images\image-avatar.png" alt="Creater Pic" class="profile"> Creation of <span class="name">Jules Wyvern</span>
+          <div class="pic"><img src="images\image-avatar.png" alt="Creater Pic" class="profile"></div>
+          <div class="maker">Creation of <span class="name">Jules Wyvern</span></div> 
+            
         </div>
       </div>  
     </div>
